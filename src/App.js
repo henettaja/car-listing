@@ -2,11 +2,24 @@ import React from 'react';
 import './App.css';
 import Carlist from "./components/Carlist";
 
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+
 function App() {
   return (
     <div className="App">
 
-      <Carlist/>
+        <AppBar position="static">
+            <Toolbar>
+
+                <Typography variant="h6">
+                    List of cars
+                </Typography>
+            </Toolbar>
+        </AppBar>
+
+        <Carlist/>
 
     </div>
   );
